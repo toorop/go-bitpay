@@ -15,8 +15,8 @@ type client struct {
 	http.Client
 }
 
-// NewClient return a new Bitpay client
-func NewClient(apiKey string) (c *client) {
+// newClient return a new Bitpay client
+func newClient(apiKey string) (c *client) {
 	return &client{apiKey: apiKey}
 }
 

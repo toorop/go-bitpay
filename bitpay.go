@@ -19,7 +19,7 @@ type bitpay struct {
 
 // New return a new Bitpay client
 func New(apiKey string) *bitpay {
-	return &bitpay{NewClient(apiKey)}
+	return &bitpay{newClient(apiKey)}
 }
 
 // GetBitcoinBestBidRates return Bitcoin Best Bid Rates (see bitpay doc)
